@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+.work-border{ width:100%; height:100%; background:#000; position:absolute; opacity:0.9; display:none; z-index:10000000; }
+.work-border .close{ background:url(../images/close.png) no-repeat; width:150px; height:150px; position:absolute; top:0; right:0; cursor:pointer;  }
+.left-wrap{/* background:#161e27;*/ height:100%; position:fixed; top:0; left:0; }
+
+.site-header{ width:400px; height:146px; position:absolute; top:50%; left:50%; transform:translate(-50%,-150%); z-index:4; text-align:center;}
+
+.site-header a{ font-size:80px; color:#fff;  }
+.site-header a:hover{ text-shadow:0 0 15px #fff; transition:1s all ease; color:#de347b; }
+.site-header a .fx1{ color:#de347b; display:inline-block;
+
+
+	transform-origin: 50% 60%;
+	transform:rotate(-25deg);
+	
+}
+.site-header a b{ display:inline-block;transition:1s all ease; }
+.site-header a:hover .dian1{transform:translate(12px);}
+.site-header a:hover .dian2{transform:translate(-12px);}
+
+.site-header a .fx2{ color:#488db7;display:inline-block;
+	
+	transform-origin: 50% 70%; 
+ 	transform:rotate(30deg);
+
+ }
+/*.site-header a .fx2:hover{
+	transform:rotate(-20deg)
+}
+ 
+*/ 
+.site-header span{ font-size:120px; transition:1s all ease;}
+.site-header h2{ color:#fff; font-weight:normal; text-align:center; border-top:2px solid #fff; line-height:40px;}
+
+
+.right-wrap{ height:100%; position:absolute; right:0; }
+
+.right-wrap .face{ background:url(../images/1-01.png) no-repeat; height:150px; width:150px; position:absolute; right:0; top:0; z-index:999; cursor:pointer; }
+.right-wrap .face:hover{ }
+.right-wrap .inner{ position:absolute;top:5%; height:10%; width:100%; }
+.right-wrap .site-nav{width:625px; position:absolute; }
+.right-wrap .site-nav ul{ text-align:center; }
+.right-wrap .site-nav li{ float:left; width:98px; height:43px; border:1px solid #49535d; margin-right:40px;}
+.right-wrap .site-nav li a{ font-size:15px; line-height:43px; color:#6c7a85; display:block; text-align:center;}
+.right-wrap .site-nav li a:hover{ color:#1799dd;}
+.right-wrap .site-nav li:hover{ border-color:#1799dd; }
+
+
+
+.right-wrap .main{ width:625px; position:absolute; top:25%; height:70%; }
+.right-wrap .main-section{ position:absolute; height:100%;}
+.right-wrap .main h1{ font-size:40px; color:#fff; }
+.right-wrap .main .main-section p{ color:#b9c7cf; }
+
+.right-wrap .main .main-section .drag-work{ position:absolute; width:100%; top:20%; }
+.right-wrap .main .main-section .drag-work h3{ background:url(../images/zuopinfont.png) no-repeat; height:40px; width:625px; }
+.right-wrap .main .main-section .pic-drag{ position:absolute; width:592px; margin:0 auto; }
+
+.right-wrap .main .main-section .pic-drag img{ float:left; margin:10px; opacity:0.8; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

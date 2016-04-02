@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dt,dd,li,span,a,b,em,i,strong,img{ padding:0; margin:0;  }
+li{ list-style:none; }
+a{ text-decoration:none; }
+img,input,select,textarea{ vertical-align:top; }
+input,select,textarea{ outline:none; }
+textarea{ resize:none; }
+.fl{ float:left; display:inline; }
+.fr{ float:right; display:inline; }
+.clearFix:after{ content:""; display:block; clear:both;}
+	
+body{ font-size:12px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#000; font-weight:normal; margin:0; height:100%; }
+
+@font-face {
+  
+}
+body{ background:#384d67;/* background:-webkit-linear-gradient(#384d67,red,#384d67);*/}
+
