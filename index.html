@@ -5,11 +5,10 @@
 <title>无标题文档</title>
 <link href="css/common.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
-<script src="js/move.js"></script>
-<script src="js/blog222.js"></script>
 </head>
 
 <body id="body">
+<div id="pagebulr">
 	<!-- LEFT SIDE -->
 	<div class="left-wrap" id="left-wrap">
 
@@ -44,15 +43,14 @@
 	</div>
     <!--RIGHT SIDE-->
 	<div class="right-wrap" id="right-wrap">
-			<div class="face" id="face"></div>
             <div class="inner">
     
                 <!-- Navigation -->
                 <nav class="site-nav">
                     <ul id="menu" class="menu clearFix">
-                        <li class="active"><a href="#about" title="A propos">作品</a></li>
-                        <li><a href="#pres" title="Technologie">我的技能</a></li>
-                       <li><a href="#ref" title="Contacts">联系我</a></li>
+                        <li class="word"><a href="#about" title="A propos">作品</a></li>
+                        <li class="skill-title"><a href="#pres" title="Technologie">我的技能</a></li>
+                       <li class="call-me"><a href="#ref" title="Contacts">联系我</a></li>
                     </ul>
                 </nav>
             </div>
@@ -61,23 +59,21 @@
             <div id="main" class="main">
             	<section id="about" class="about main-section">
                	<h1>Welcome To My HomePage!</h1>
-               	<p>Artisan web et défricheur de culture digitale post-moderne,
-                  lrtrln créé en toute indépendance des sites et solutions web depuis le démantèlement de tous les minitels et l'obsolescence des cassettes audio dites "ferrichrome".
+               	<p>欢迎进入我的个人网站，这里面有我的部分个人作品--包含一些JS效果，还有一些HTML5的效果...
                	</p>
                 
                 <div class="drag-work">
-                	<h3></h3>
                     <div class="pic-drag clearFix" id="pic-drag">
-                    	<img src="images/Dropbox-Icon.png" >
-                    	<img src="images/tuozhuai.png" >
-                    	<img src="images/baozha.png" >
-                    	<img src="images/Twitter-Icon.png" >
-                    	<img src="images/Flukle-Icon.png" >
-                    	<img src="images/Carbonmade-Icon.png" >
-                    	<img src="images/HTML3-Icon.png" >
-                    	<img src="images/Dribbble-Icon.png" >
-                    	<img src="images/Google-Plus-Icon.png" >
-                    	<img src="images/Instagram-Icon.png" >
+                    	<img id="3Dhuan" src="images/3Dhuan.png" >
+                    	<img id="tuozhuai" src="images/tuozhuai.png" >
+                    	<img id="baozha" src="images/baozha.png" >
+                    	<img id="fanye" src="images/fanye.png" >
+                    	<img id="shizhong" src="images/shizhong.png" >
+                    	<img id="lanqiu" src="images/lanqiu.png" >
+                    	<img id="shoufengqin" src="images/shoufengqin.png" >
+                    	<img id="chuanqiang" src="images/chuanqiang.png" >
+                    	<img id="fangdajing" src="images/fangdajing.png" >
+                    	<img id="pingbao" src="images/pingbao.png" >
                     	<img src="images/Designfloat-Icon.png" >
                     	<img src="images/Designbump-Icon.png" >
                     </div>
@@ -85,13 +81,170 @@
                 </div>
 				</section>
            	</div>
+            <div id="skill" class="skill">
+            	<section id="skill-about" class="skill-about skill-section">
+               	<h1>My Skills</h1>
+               	<p>性格沉稳内敛，做事情专注细心，责任心强，有良好的审美，热爱技术，正努力奔跑在前端的路上。。。
+               	</p>
+                
+                <div class="drag-work">
+                	<div class="skillhtml clearFix" id="skillhtml">
+                    	<img class="fl" src="images/html.jpg" />
+                        <div class="fl"></div>
+                        <span class="fl" style="width:435px">HTML:熟悉HTML，能够书写语义合理，结构清晰，易维护的HTML结构；理解W3C标准，熟练编写结构良好的能够还原视觉设计，并兼容业界承认的主流浏览器</span>
+                    </div>
+                    <div class="skillcss clearFix" id="skillcss">
+                    	<img class="fl" src="images/js.jpg" />
+                        <div class="fl"></div>
+                        <span class="fl" style="width:435px">CSS:熟练掌握CSS,熟悉浏览器兼容性解决方案</span>
+                    </div>
+                    <div class="skillhtml5 clearFix" id="skillhtml5">
+                    	<img class="fl" src="images/html5.jpg" />
+                        <div class="fl"></div>
+                        <span class="fl" style="width:435px">JS:熟练掌握JavaScript及相关类库(JQuery)的使用,熟悉面向对象编程方法</span>
+                    </div>
+                
+                </div>
+				</section>
+           	</div>
+            <div id="callme" class="callme">
+            	<section id="callme-about" class="callme-about callme-section">
+               	<h1>Contact Me</h1>
+                
+                <div class="drag-work">
+                    <div class="phone clearFix">
+                        <img class="fl" src="images/dianhua.jpg"/>
+                        <span class="fl">TEL:15921075232</span>
+                    </div>
+                    <div class="email clearFix">
+                        <img class="fl" src="images/youxiang.jpg"/>
+                        <span class="fl">Email:john0916_vip@sina.com</span>
+                    </div>
+                    <div class="dizhi clearFix">
+                        <img class="fl" src="images/dizhi.jpg"/>
+                        <span class="fl">Address:上海市-浦东新区</span>
+                    </div>
+                </div>
+				</section>
+           	</div>
+
             
             
         </div>
         
+</div>
+
 	<!--work-border-->
+    
+        <div class="job-two" id="job-two">
+            <ul>
+                <li><img src="images/1739248454fe29641ee8f1.jpg"><span>0</span></li>
+                <li><img src="images/4134521004fe2a83303d01.jpg"><span>0</span></li>
+                <li><img src="images/7669900194fe295f319297.jpg"><span>0</span></li>
+                <li><img src="images/9367157484fe2964d95349.jpg"><span>0</span></li>
+                <li><img src="images/9480039934ff52fc547cc5.jpg"><span>0</span></li>
+                <li><img src="images/17367597244fe29662995cb.jpg"><span>0</span></li>
+                <li><img src="images/17958872784fe2965867109.jpg"><span>0</span></li>
+                <li><img src="images/67241375551cf94212540b.jpg"><span>0</span></li>
+            </ul>
+        </div>
+        
+       	<div class="job-three" id="div1">
+        </div>
+
     <div class="work-border" id="work-border">
-    	<div class="close" id="close"></div>
+        <div class="job-one" id="job-one">
+            <ul id="oneul">
+                <li><img src="images/phone.png"></li>
+                <li><img src="images/phone.png"></li>
+                <li><img src="images/phone.png"></li>
+                <li><img src="images/phone.png"></li>
+                <li><img src="images/phone.png"></li>
+                <li><img src="images/phone.png"></li>
+                <li><img src="images/phone.png"></li>
+                <li><img src="images/phone.png"></li>
+                <li><img src="images/phone.png"></li>
+                <li><img src="images/phone.png"></li>
+                <li><img src="images/phone.png"></li>
+            </ul>
+        </div>
+        
+        
+        <div class="job-four" id="job-four">
+            <input id="btn_prev" type="button" value="上一张"/>
+            <input id="btn_next" type="button" value="下一张"/>
+            <ul id="jobfourul">
+                <li class="l2"><img src="images/img1/1.jpg" /></li>
+                <li class="l1"><img src="images/img1/2.jpg" /></li>
+                <li class="cur"><img src="images/img1/3.jpg" /></li>
+                <li class="r1"><img src="images/img1/4.jpg" /></li>
+                <li class="r2"><img src="images/img1/5.jpg" /></li>
+                <li><img src="images/img1/6.jpg" /></li>
+                <li><img src="images/img1/7.jpg" /></li>
+                <li><img src="images/img1/8.jpg" /></li>
+                <li><img src="images/img1/9.jpg" /></li>
+                <li><img src="images/img1/10.jpg" /></li>
+                <li><img src="images/img1/11.jpg" /></li>
+                <li><img src="images/img1/12.jpg" /></li>
+            
+            </ul>
+        </div>
+	</div>
+    <div class="job-five" id="job-five">
+        <div id="jobfivebtn">点我 n(*≧▽≦*)n</div>
+        <div id="clock">
+            <div id="hour"></div>
+            <div id="min"></div>
+            <div id="sec"></div>
+            <div id="cap"></div>
+            <!-- <span><strong>12</strong></span> -->
+        </div>
     </div>
+    <div class="job-six" id="job-six">
+        <div id="jobsixball"></div>
+    </div>
+    
+    <div class="job-seven" id="job-seven">
+        <div class="active"><img src="images/hand_lyre/0.jpg" /><span></span></div>
+        <div><img src="images/hand_lyre/1.jpg" /><span></span></div>
+        <div><img src="images/hand_lyre/2.jpg" /><span></span></div>
+        <div><img src="images/hand_lyre/3.jpg" /><span></span></div>
+        <div><img src="images/hand_lyre/0.jpg" /><span></span></div>
+        <div><img src="images/hand_lyre/1.jpg" /><span></span></div>
+    </div>
+    
+    <div class="job-eight" id="job-eight">
+        <ul id="jobeightul">
+            <li><span>john</span></li>
+            <li><span>john</span></li>
+            <li><span>john</span></li>
+            <li><span>john</span></li>
+            <li><span>john</span></li>
+            <li><span>john</span></li>
+            <li><span>john</span></li>
+            <li><span>john</span></li>
+            <li><span>john</span></li>
+        </ul>
+    </div>
+    <div class="job-nine" id="job-nine">
+        <div id="jobninejpg1">
+            <img src="images/zoom.jpg" />
+            <div id="mark"></div>
+        </div>
+        <div id="jobninejpg2">
+            <img src="images/zoom.jpg" id="bigImg" width="900" height="900" />
+        </div>
+    </div>
+    <div class="job-ten" id="job-ten">
+    	<canvas id="jobten"></canvas>
+    </div>
+    
+    <div class="close" id="close"></div>
+   
 </body>
 </html>
+<script src="js/job-one.js"></script>
+
+<script src="js/blog222.js"></script>
+<script src="js/move.js"></script>
+<script src="js/jquery-1.7.2.js"></script>

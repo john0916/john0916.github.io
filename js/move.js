@@ -1,72 +1,61 @@
 //版权 北京智能社©, 保留所有权利
 
-function getStyle(obj,name){
-	return (obj.currentStyle || getComputedStyle(obj,null))[name];	
-}
 
-//options: duration  easing  complete
-function move(obj,json,options){
+function getStyle(obj,attr){
+	return obj.currentStyle?obj.currentStyle[attr]:getComputedStyle(obj,false)[attr];
+}
+//time,fn	-->json
+function move(obj,json,opational){
 	
-	options = options || {};
-	options.duration = options.duration || 700;
-	options.easing = options.easing || "ease-out";
+	var opational = opational || {};
+	opational.time = opational.time || 300;
+	opational.fn = opational.fn || null;
+	opational.type = opational.type || 'ease-out';
 	
-	
-	
-	var start = {};
-	var dis = {};
-	
-	for(var name in json){
-		start[name] = parseFloat(getStyle(obj,name));
-		dis[name] = json[name] - start[name];
+	var start={};
+	var dis={};
+	for(var key in json){
+		start[key]=parseInt(getStyle(obj,key));
+		dis[key]=json[key]-start[key];
 	}
 	
-	var count = Math.round(options.duration/30);
+	var count=Math.round(opational.time/30);
+	var n=0;
 	
-	var n = 0;
 	clearInterval(obj.timer);
-	obj.timer = setInterval(function(){
+	obj.timer=setInterval(function(){
 		n++;
 		
-		//位置：起点 + 距离/次数*n
-		
-		for(var name in json){
-			
-			//var cur = start[name] + dis[name]/count*n;
-			
-			switch(options.easing){
-				case "linear":
+		for(var key in json){
+			//办事
+			switch(opational.type){
+				case 'linear':
 					var a = n/count;
-					var cur = start[name] + dis[name]*a;
+					var cur=start[key]+dis[key]*a;
 					break;
-				case "ease-in":
-					var a = n/count;
-					var cur = start[name] + dis[name]*a*a*a;
+				case 'ease-in':
+					var a=n/count;
+					var cur=start[key]+dis[key]*a*a*a
 					break;
-				case "ease-out":
-					var a = 1 - n/count;
-					var cur = start[name] + dis[name]*(1 - a*a*a);
-					break;
+				case 'ease-out':
+					var a=1-n/count;
+					var cur=start[key]+dis[key]*(1-a*a*a)
+					break;	
 			}
 			
-			if(name == "opacity"){
-				obj.style.opacity = cur;
-				obj.style.filter = "alpha(opacity:"+cur*100+")";
-			} else {
-				obj.style[name] = cur + "px";
-			}
-			
+			if(key=='opacity'){
+				obj.style.opacity=cur;
+				obj.style.filter='alpha(opacity:'+cur*100+')';
+			}else{
+				obj.style[key]=cur+'px';
+				
+			}	
 		}
 		
-		if(n == count){
+		if(n==count){
 			clearInterval(obj.timer);
-			options.complete && options.complete.call(obj);
-		}	
+			opational.fn && opational.fn();
+				
+		}
 	},30);
-	
-		
 }
-
-
-
-

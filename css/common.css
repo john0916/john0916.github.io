@@ -15,5 +15,6 @@ body{ font-size:12px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif
 @font-face {
   
 }
-body{ background:#384d67;/* background:-webkit-linear-gradient(#384d67,red,#384d67);*/}
+body{ background:#384d67;/* background:-webkit-linear-gradient(#384d67,red,#384d67);*/height:100%;}
 
+html{ height:100%;}
